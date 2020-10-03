@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div class="main">
+
+      <div id="1">
+        <h4>All users:</h4>
+        <table class="table table-bordered">
+          <thead><tr><th>ID</th><th>FIRST NAME</th><th>LAST NAME</th><th>PHONE</th><th>STREET</th><th>ZIP</th><th>CITY</th></tr></thead>
+          <tbody id="tb"></tbody>
+        </table>
+      </div>
+
+      <br>
+
+      <div id="2">
+        <h4>Get user by ID:</h4>
+        <table class="table table-bordered">
+          <thead><tr><th>ID</th><th>FIRST NAME</th><th>LAST NAME</th><th>PHONE</th><th>STREET</th><th>ZIP</th><th>CITY</th></tr></thead>
+          <tbody id="tbSingle"></tbody>
+        </table>
+        <input type="text" id="userID">
+        <button class="btn btn-primary" id="getUserByID">Get user by ID</button>
+      </div>
+
+      <br>
+      <br>
+      
+      <div id="3">
+        <h4>Create user:</h4>
+        <input type="text" id="newUserFName" value="Type first name here"><br>
+        <input type="text" id="newUserLName" value="Type last name here"><br>
+        <input type="text" id="newUserPhone" value="Type phone no. here"><br>
+        <input type="text" id="newUserStreet" value="Type street here"><br>
+        <input type="text" id="newUserZip" value="Type zip here"><br>
+        <input type="text" id="newUserCity" value="Type city here"><br><br>
+        <button class="btn btn-primary" id="createUser">Create user</button>
+      </div>
+
+      <br>
+      <br>
+      
+      <div id="4">
+        <h4>Update user:</h4>
+        <input type="text" id="updateUserID" value="Type ID here"><br>
+        <input type="text" id="updateUserFName" value="Type first name here"><br>
+        <input type="text" id="updateUserLName" value="Type last name here"><br>
+        <input type="text" id="updateUserPhone" value="Type phone no. here"><br>
+        <input type="text" id="updateUserStreet" value="Type street here"><br>
+        <input type="text" id="updateUserZip" value="Type zip here"><br>
+        <input type="text" id="updateUserCity" value="Type city here"><br><br>
+        <button class="btn btn-primary" id="updateUser">Update user</button>
+      </div>
+
+      <br>
+      <br>
+
+      <div id="5">
+        <h4>Exercise 5 - Delete user:</h4>
+        <input type="text" id="deleteUserID" value="Type ID here"><br><br>
+        <button class="btn btn-primary" id="deleteUser">Delete user</button>
+      </div>
+
+    </div>
+    <script src="bundle.js"></script>
+  </body>
+</html>
